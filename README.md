@@ -5,7 +5,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Creem is the payment partner you always deserved, we strive for simplicity and straightforwardness on our APIs.
+[Creem.io](http://creem.io) is the payment partner you always deserved, we strive for simplicity and straightforwardness on our APIs.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-creem?file=playground%2Fapp.vue) -->
@@ -14,9 +14,9 @@ Creem is the payment partner you always deserved, we strive for simplicity and s
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- [x] Typed Creem API to easily import and load Creem Products
+- [x] Auto-injected Server Utils to quickstart Checkouts
+- [ ] Webhooks (WIP)
 
 ## Quick Setup
 
