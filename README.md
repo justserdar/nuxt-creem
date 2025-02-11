@@ -5,7 +5,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+Creem is the payment partner you always deserved, we strive for simplicity and straightforwardness on our APIs.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-creem?file=playground%2Fapp.vue) -->
