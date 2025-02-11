@@ -16,7 +16,10 @@
 <!-- Highlight some of the features your module provide here -->
 - [x] Typed Creem API to easily import and load Creem Products
 - [x] Auto-injected Server Utils to quickstart Checkouts
-- [ ] Webhooks (WIP)
+- [x] Customer Billing Portal Support
+- [X] Webhooks Header Verification
+- [X] Webhooks Event Types
+- [ ] Default WebHook Handler
 
 ## Quick Setup (not yet)
 

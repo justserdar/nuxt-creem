@@ -16,5 +16,10 @@ export function useCreemCustomer() {
         email,
       },
     }),
+    portal:
+    <T>(body: CreemCustomerBody) => useFetchCreem<T>(`/customers/billing`, {
+      method: 'POST',
+      body
+    }),
   }
 }
