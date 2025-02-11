@@ -15,9 +15,8 @@ import {
 
 import { useRuntimeConfig } from '#imports'
 
-// TODO: map each api endpoint and method
 export function useFetchCreem<
-  T = any,
+  T = unknown,
   R extends ResponseType = 'json',
 >(
   req: FetchRequest,
@@ -30,7 +29,6 @@ export function useFetchCreem<
   const apiURL = environment === 'test' ? 'test-api' : 'api'
   const baseURL = `https://${apiURL}.creem.io/${version}`
 
-
   if (!tokens.test || !tokens.live) {
     consola.error('Missing Creem API Token.')
   }
@@ -39,7 +37,7 @@ export function useFetchCreem<
     baseURL,
     onRequest({ options }) {
       options.headers = defu<Headers, HeadersInit[]>(options.headers, {
-        'x-api-key': `${useRuntimeConfig().creem.tokens[useRuntimeConfig().creem.environment]}`,
+        'x-api-key': `${tokens[environment]}`,
         'content-type': 'application/json',
         'Accept': 'application/json',
       })

@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
-  modules: ['../src/module', '@nuxt/ui'],
   extends: ['@nuxt/ui-pro'],
+  modules: ['../src/module', '@nuxt/ui'],
   devtools: { enabled: true },
   runtimeConfig: {
     creem: {
@@ -16,8 +16,8 @@ export default defineNuxtConfig({
       site_url: process.env.NUXT_CREEM_SITE_URL,
     },
   },
-  compatibilityDate: '2025-02-11',
   future: {
     compatibilityVersion: 4,
   },
+  compatibilityDate: '2025-02-11',
 })

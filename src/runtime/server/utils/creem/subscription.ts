@@ -4,7 +4,7 @@ import type {
 
 import {
   useFetchCreem,
-} from '#imports'
+} from './index'
 
 export function useCreemSubscriptions() {
   return {

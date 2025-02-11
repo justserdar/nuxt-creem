@@ -3,9 +3,9 @@ import { defineNuxtModule, createResolver, addServerImportsDir } from '@nuxt/kit
 import { consola } from 'consola'
 import { defu } from 'defu'
 
-// Module options TypeScript interface definition
-export interface ModuleOptions {
-  environment: 'test' | 'live'
+// Module options TypeScript type definition
+export type ModuleOptions = {
+  environment: string
   version: string
   return_url: string
   webhook_secret: string
@@ -39,18 +39,16 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.options.alias['#creem'] = runtimeDir
 
-    const moduleOptions = nuxt.options.runtimeConfig.creem = defu<
-      RuntimeConfig['creem'],
-      ModuleOptions[]
-    >(
-      nuxt.options.runtimeConfig.creem,
-      options,
-    )
+    // Ensure moduleOptions is correctly typed
+    const moduleOptions: ModuleOptions = nuxt.options.runtimeConfig.creem = defu(
+      options as ModuleOptions,
+      nuxt.options.runtimeConfig.creem as Partial<ModuleOptions>,
+    ) as ModuleOptions
 
-    if (moduleOptions?.environment === 'test' && moduleOptions.tokens?.test === '') {
+    if (moduleOptions.environment === 'test' && moduleOptions.tokens.test === '') {
       consola.warn('Please provide a valid API Token for Test mode for your Creem API.')
     }
-    else if (moduleOptions?.environment === 'live' && moduleOptions.tokens?.live === '') {
+    else if (moduleOptions.environment === 'live' && moduleOptions.tokens.live === '') {
       consola.warn('Please provide a valid API Token for Live mode for your Creem API.')
     }
 

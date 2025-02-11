@@ -4,7 +4,7 @@ import type {
 
 import {
   useFetchCreem,
-} from '#imports'
+} from './index'
 
 export function useCreemCustomer() {
   return {
@@ -19,7 +19,7 @@ export function useCreemCustomer() {
     portal:
     <T>(body: CreemCustomerBody) => useFetchCreem<T>(`/customers/billing`, {
       method: 'POST',
-      body
+      body,
     }),
   }
 }

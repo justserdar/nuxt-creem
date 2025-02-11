@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const signature = headers['x-creem-signature']
   const secret = useRuntimeConfig().creem.webhook_secret
   const computedSignature = generateSignature(JSON.stringify(body), secret)
-  if(signature !== computedSignature) {
+  if (signature !== computedSignature) {
     throw createError({
       statusCode: 400,
       statusMessage: 'Invalid signature',
