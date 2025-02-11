@@ -14,10 +14,14 @@ export default createConfigForNuxt({
       './playground',
     ],
   },
+  ignorePatterns: [
+    'docs/**', 
+  ],
 })
   .append({
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
+      '@stylistic/comma-dangle': 'off',
     },
   })
