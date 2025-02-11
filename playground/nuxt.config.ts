@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     creem: {
+      environment: process.env.NUXT_CREEM_ENVIRONMENT,
+      return_url: process.env.NUXT_CREEM_RETURN_URL,
+      webhook_secret: process.env.NUXT_CREEM_WEBHOOK_SECRET,
       tokens: {
         test: process.env.NUXT_CREEM_TEST_TOKEN,
         live: process.env.NUXT_CREEM_LIVE_TOKEN,
       },
-      environment: process.env.NUXT_CREEM_ENVIRONMENT,
-      version: process.env.NUXT_CREEM_VERSION,
-      return_url: process.env.NUXT_CREEM_RETURN_URL
     },
     public: {
       site_url: process.env.NUXT_CREEM_SITE_URL,

@@ -8,6 +8,7 @@ export interface ModuleOptions {
   environment: 'test' | 'live'
   version: string
   return_url: string
+  webhook_secret: string
   tokens: {
     test: string
     live: string
@@ -23,6 +24,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     environment: 'test',
     version: 'v1',
+    webhook_secret: '',
     tokens: {
       test: '',
       live: '',
