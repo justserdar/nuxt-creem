@@ -1,0 +1,80 @@
+# Dependencies
+node_modules
+
+# Logs
+*.log*
+
+# Temp directories
+.temp
+.tmp
+.cache
+
+# Yarn
+**/.yarn/cache
+**/.yarn/*state*
+
+# Generated dirs
+dist
+
+# Nuxt
+.nuxt
+.output
+.data
+.vercel_build_output
+.build-*
+.netlify
+
+# Env
+.env
+
+# Testing
+reports
+coverage
+*.lcov
+.nyc_output
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Intellij idea
+*.iml
+.idea
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Docs
+docs/node_modules
+docs/.output
+docs/.data
+docs/.vercel_build_output
+docs/.build-*
+docs/.netlify
+docs/.env
+docs/.DS_Store
+docs/.cache
+docs/.nuxt
+
+# Playground
+playground/node_modules
+playground/.output
+playground/.data
+playground/.vercel_build_output
+playground/.build-*
+playground/.netlify
+playground/.env
+playground/.DS_Store
+playground/.cache
+playground/.nuxt

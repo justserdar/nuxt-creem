@@ -1,0 +1,51 @@
+{
+  "name": "nuxt-creem",
+  "version": "0.0.1",
+  "description": "Creem is the payment partner you always deserved, we strive for simplicity and straightforwardness on our APIs.",
+  "repository": "justserdar/nuxt-creem",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev:docs": "nuxi dev docs",
+    "dev:docs:build": "nuxi build docs",
+    "dev:docs:prepare": "nuxi prepare docs",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.15.4"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^2.0.0",
+    "@nuxt/eslint-config": "^1.0.1",
+    "@nuxt/module-builder": "^0.8.4",
+    "@nuxt/schema": "^3.15.4",
+    "@nuxt/test-utils": "^3.15.4",
+    "@types/node": "latest",
+    "changelogen": "^0.5.7",
+    "eslint": "^9.20.0",
+    "nuxt": "^3.15.4",
+    "typescript": "~5.7.3",
+    "vitest": "^3.0.5",
+    "vue-tsc": "^2.2.0"
+  }
+}

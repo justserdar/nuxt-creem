@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "my-module-playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate"
+  },
+  "dependencies": {
+    "nuxt": "^3.15.4"
+  },
+  "devDependencies": {
+    "@nuxt/ui-pro": "^1.7.0"
+  }
+}
