@@ -10,6 +10,10 @@ export default defineNuxtConfig({
       },
       environment: process.env.NUXT_CREEM_ENVIRONMENT,
       version: process.env.NUXT_CREEM_VERSION,
+      return_url: process.env.NUXT_CREEM_RETURN_URL
+    },
+    public: {
+      site_url: process.env.NUXT_CREEM_SITE_URL,
     },
   },
   compatibilityDate: '2025-02-11',

@@ -7,6 +7,7 @@ import { defu } from 'defu'
 export interface ModuleOptions {
   environment: 'test' | 'live'
   version: string
+  return_url: string
   tokens: {
     test: string
     live: string
