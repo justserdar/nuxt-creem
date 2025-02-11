@@ -1,11 +1,10 @@
 import type {
   CreemProduct,
-  CreemProductList,
 } from '../../../types/creem/product'
 
 import {
   useFetchCreem,
-} from '#imports'
+} from './index'
 
 export function useCreemProducts() {
   return {

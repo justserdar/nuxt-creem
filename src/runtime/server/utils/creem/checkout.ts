@@ -2,7 +2,7 @@ import type { CreemCheckoutBody } from '../../../types/creem/checkout'
 
 import {
   useFetchCreem,
-} from '#imports'
+} from './index'
 
 export function useCreemCheckout() {
   return {
