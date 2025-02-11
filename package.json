@@ -29,12 +29,10 @@
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
-  "dependencies": {
+  "devDependencies": {
     "@nuxt/kit": "^3.15.4",
     "consola": "^3.4.0",
-    "defu": "^6.1.4"
-  },
-  "devDependencies": {
+    "defu": "^6.1.4",
     "@nuxt/devtools": "^2.0.0",
     "@nuxt/eslint-config": "^1.0.1",
     "@nuxt/module-builder": "^0.8.4",
