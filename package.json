@@ -23,7 +23,7 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "docs:dev": "nuxi dev docs",
-    "docs:build": "nuxi build docs",
+    "docs:build": "nuxi build",
     "docs:prepare": "nuxi prepare docs",
     "docs:preview": "nuxi preview docs",
     "docs:start": "node .output/server/index.mjs",
