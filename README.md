@@ -18,7 +18,7 @@
 - [x] Auto-injected Server Utils to quickstart Checkouts
 - [ ] Webhooks (WIP)
 
-## Quick Setup
+## Quick Setup (not yet)
 
 Install the module to your Nuxt application with one command:
 
