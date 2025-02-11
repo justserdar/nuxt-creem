@@ -14,9 +14,6 @@ export default createConfigForNuxt({
       './playground',
     ],
   },
-  ignorePatterns: [
-    'docs/**', 
-  ],
 })
   .append({
     rules: {
