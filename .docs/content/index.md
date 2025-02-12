@@ -25,6 +25,8 @@ Grow your SaaS without the squeeze using Creem.io
 A smoother Merchant of Record with transparent billing and better fees.
 Creem is the payment partner you always deserved, we strive for simplicity and straightforwardness on our APIs.
 
+Note: Made and maintained by the Nuxt Community.
+
 #links
   :::u-button
   ---
