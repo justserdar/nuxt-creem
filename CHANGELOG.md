@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.3...v0.0.4)
+
+### 🚀 Enhancements
+
+- Umamified the docs ([1bf8234](https://github.com/justserdar/nuxt-creem/commit/1bf8234))
+
+### 🏡 Chore
+
+- **release:** V0.0.3 ([70a520d](https://github.com/justserdar/nuxt-creem/commit/70a520d))
+- Updated docs, removed emplate menu ([3c5b9d2](https://github.com/justserdar/nuxt-creem/commit/3c5b9d2))
+- Moved docs to .docs ([ae41ccb](https://github.com/justserdar/nuxt-creem/commit/ae41ccb))
+
+### ❤️ Contributors
+
+- H+ ([@justserdar](http://github.com/justserdar))
+
 ## v0.0.3
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.2...v0.0.3)
