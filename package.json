@@ -2,7 +2,10 @@
   "name": "nuxt-creem",
   "version": "0.0.4",
   "description": "Creem is the payment partner you always deserved, we strive for simplicity and straightforwardness on our APIs.",
-  "repository": "justserdar/nuxt-creem",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justserdar/nuxt-creem.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
