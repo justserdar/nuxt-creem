@@ -1,4 +1,3 @@
-import type { RuntimeConfig } from '@nuxt/schema'
 import { defineNuxtModule, createResolver, addServerImportsDir } from '@nuxt/kit'
 import { consola } from 'consola'
 import { defu } from 'defu'
