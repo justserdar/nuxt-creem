@@ -28,11 +28,9 @@ export function useFetchCreem<
   const { tokens, version, environment } = useRuntimeConfig().creem
   const apiURL = environment === 'test' ? 'test-api' : 'api'
   const baseURL = `https://${apiURL}.creem.io/${version}`
-
   if (!tokens.test || !tokens.live) {
     consola.error('Missing Creem API Token.')
   }
-  console.log(tokens[environment])
   const creem = ofetch.create({
     baseURL,
     onRequest({ options }) {
