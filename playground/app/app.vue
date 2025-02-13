@@ -23,6 +23,13 @@ const buyProduct = async (product: CreemProduct) => {
 
 <template>
   <UPage class="max-w-5xl mx-auto">
+    <UPageHeader>
+      <template #title>
+        <h1>
+          Creem Playground
+        </h1>
+      </template>
+    </UPageHeader>
     <UPageBody>
       <div v-if="status === 'pending'">
         <UPageCard

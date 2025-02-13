@@ -32,7 +32,7 @@ export function useFetchCreem<
   if (!tokens.test || !tokens.live) {
     consola.error('Missing Creem API Token.')
   }
-  // console.log(tokens.test)
+  console.log(tokens[environment])
   const creem = ofetch.create({
     baseURL,
     onRequest({ options }) {
