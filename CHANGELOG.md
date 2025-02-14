@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.7...v0.0.8)
+
+### 🚀 Enhancements
+
+- Added CreemCustomerPortalBody type ([6df17d9](https://github.com/justserdar/nuxt-creem/commit/6df17d9))
+
+### ❤️ Contributors
+
+- H+ ([@justserdar](http://github.com/justserdar))
+
 ## v0.0.7
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.6...v0.0.7)
