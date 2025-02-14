@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.5...v0.0.6)
+
+### 🏡 Chore
+
+- Pkg fields ([e3568a8](https://github.com/justserdar/nuxt-creem/commit/e3568a8))
+
+### ❤️ Contributors
+
+- H+ ([@justserdar](http://github.com/justserdar))
+
 ## v0.0.5
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.4...v0.0.5)
