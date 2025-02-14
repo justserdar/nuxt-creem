@@ -26,7 +26,7 @@ const buyProduct = async (product: CreemProduct) => {
     <UPageHeader>
       <template #title>
         <h1>
-          Creem Playground
+          Nuxt UI Pro - Creem.io Module Playground
         </h1>
       </template>
     </UPageHeader>
@@ -61,8 +61,23 @@ const buyProduct = async (product: CreemProduct) => {
             </span>
           </template>
           <template #footer>
-            <UButton @click="buyProduct(product)">
-              Buy Product
+            <UButton
+              :disabled="status === 'pending'"
+              @click="buyProduct(product)"
+            >
+              <template #icon>
+                <UIcon
+                  name="i-heroicons-arrow-right"
+                />
+              </template>
+              <template #default>
+                <span v-if="status === 'pending'">
+                  Loading...
+                </span>
+                <span  v-else>
+                  Buy Product
+                </span>
+              </template>
             </UButton>
           </template>
         </UPageCard>

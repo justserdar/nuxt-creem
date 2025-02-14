@@ -40,8 +40,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Ensure moduleOptions is correctly typed
     const moduleOptions: ModuleOptions = nuxt.options.runtimeConfig.creem = defu(
-      options as ModuleOptions,
-      nuxt.options.runtimeConfig.creem as Partial<ModuleOptions>,
+      nuxt.options.runtimeConfig.creem as Partial<ModuleOptions>
     ) as ModuleOptions
 
     if (moduleOptions.environment === 'test' && moduleOptions.tokens.test === '') {
@@ -50,7 +49,7 @@ export default defineNuxtModule<ModuleOptions>({
     else if (moduleOptions.environment === 'live' && moduleOptions.tokens.live === '') {
       consola.warn('Please provide a valid API Token for Live mode for your Creem API.')
     }
-
+    options = moduleOptions
     addServerImportsDir(resolve(runtimeDir, 'server', 'utils', 'creem'))
   },
 })
