@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Added creem module key and values and added  app title ([44707dc](https://github.com/justserdar/nuxt-creem/commit/44707dc))
+- Module runtime config update ([4403dd4](https://github.com/justserdar/nuxt-creem/commit/4403dd4))
+
+### 🏡 Chore
+
+- Updated package ([865d9c3](https://github.com/justserdar/nuxt-creem/commit/865d9c3))
+- Externalized docs ([901a626](https://github.com/justserdar/nuxt-creem/commit/901a626))
+- Removed test logging and updated compatibility date ([5b4bff3](https://github.com/justserdar/nuxt-creem/commit/5b4bff3))
+
+### ❤️ Contributors
+
+- H+ ([@justserdar](http://github.com/justserdar))
+
 ## v0.0.4
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.3...v0.0.4)
