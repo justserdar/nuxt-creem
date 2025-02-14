@@ -8,3 +8,7 @@ export interface CreemCustomerBody {
   created_at: string
   updated_at: string
 }
+
+export interface CreemCustomerPortalBody {
+  customer_portal_link: string
+}
