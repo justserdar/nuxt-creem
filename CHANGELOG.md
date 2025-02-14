@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.6...v0.0.7)
+
+### 🚀 Enhancements
+
+- Included shared types, webhook handler for Creem webhook events and updated the playground ([73d7889](https://github.com/justserdar/nuxt-creem/commit/73d7889))
+
+### ❤️ Contributors
+
+- H+ ([@justserdar](http://github.com/justserdar))
+
 ## v0.0.6
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.5...v0.0.6)
