@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CreemProduct, CreemProductList } from '~/types/creem'
+import type { CreemProduct, CreemProductList } from '#creem/shared/types'
 
 const { data: products, status } = await useFetch<CreemProductList>('/api/v1/products/list', {
   headers: {
@@ -62,7 +62,6 @@ const buyProduct = async (product: CreemProduct) => {
           </template>
           <template #footer>
             <UButton
-              :disabled="status === 'pending'"
               @click="buyProduct(product)"
             >
               <template #icon>
@@ -71,10 +70,7 @@ const buyProduct = async (product: CreemProduct) => {
                 />
               </template>
               <template #default>
-                <span v-if="status === 'pending'">
-                  Loading...
-                </span>
-                <span  v-else>
+                <span>
                   Buy Product
                 </span>
               </template>

@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver, addServerImportsDir } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addServerImportsDir, addImportsDir } from '@nuxt/kit'
 import { consola } from 'consola'
 import { defu } from 'defu'
 
@@ -51,6 +51,7 @@ export default defineNuxtModule<ModuleOptions>({
     }
     options = moduleOptions
     addServerImportsDir(resolve(runtimeDir, 'server', 'utils', 'creem'))
+    addImportsDir(resolve(runtimeDir, 'shared'))
   },
 })
 

@@ -1,7 +1,12 @@
 export default defineEventHandler(async (event) => {
   const { product } = await readBody(event)
-  const config = useRuntimeConfig()
-  const session = await useCreemCheckout().createSession({ product_id: product.id, return_url: `${config.public.site_url}${config.creem.return_url}` })
+  if (!product) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'A Creem Product ID is required',
+    })
+  }
+  const session = await useCreemCheckout().createSession({ product_id: product.id })
   if (!session.checkout_url) {
     throw createError({
       statusCode: 400,
