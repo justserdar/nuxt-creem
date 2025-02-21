@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.9
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.8...v0.0.9)
+
+### 🚀 Enhancements
+
+- CreemCheckoutCallbackHandler and ReturnParam type ([954afcf](https://github.com/justserdar/nuxt-creem/commit/954afcf))
+
+### ❤️ Contributors
+
+- H+ <serdar@justserdar.dev>
+
 ## v0.0.8
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.7...v0.0.8)
