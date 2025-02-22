@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.10
+
+[compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.9...v0.0.10)
+
+### 🩹 Fixes
+
+- Webhook and redirect handlers signature verification ([d3478e5](https://github.com/justserdar/nuxt-creem/commit/d3478e5))
+
+### ❤️ Contributors
+
+- H+ ([@justserdar](http://github.com/justserdar))
+
 ## v0.0.9
 
 [compare changes](https://github.com/justserdar/nuxt-creem/compare/v0.0.8...v0.0.9)
